@@ -11,11 +11,7 @@ const usernames = ['user1', 'user2'];
 // Create a new Bank instance
 const bank = new Bank(accounts, usernames);
 
-/**
- * ---------------------------
- * Testing "Create Account"
- * ---------------------------
- */
+
 try {
     // Scenario 1: Valid account creation
     const acc = bank.createAccount('user1', 23, 1234567892);
@@ -48,11 +44,7 @@ try {
     console.log('Create Account - Scenario 3 passed');
 }
 
-/**
- * ---------------------------
- * Testing "Deposit Money"
- * ---------------------------
- */
+
 // Scenario 1: Successful deposit
 try {
     const newBalance = bank.deposit(1234567890, 500);
@@ -81,11 +73,7 @@ try {
     console.log('Deposit - Scenario 3 passed');
 }
 
-/**
- * ---------------------------
- * Testing "Withdraw Money"
- * ---------------------------
- */
+
 // Scenario 1: Successful withdrawal
 try {
     const newBalance = bank.withdraw(1234567890, 100);
@@ -122,11 +110,7 @@ try {
     console.log('Withdraw - Scenario 4 passed');
 }
 
-/**
- * ---------------------------
- * Testing "Check Balance"
- * ---------------------------
- */
+
 // Scenario 1: Successful balance check
 try {
     const balance = bank.getBalance(1234567890);
